@@ -5,15 +5,21 @@
   "description": "",
   "main": "index.ts",
   "directories": {
-    "test": "tests"
+    "test": "mocha"
   },
   "dependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-typescript": "^7.10.4",
+    "babel-jest": "^26.3.0",
     "typescript": "^3.9.7"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "jest": "^26.4.0"
+  },
   "scripts": {
     "tsw": "tsc src/index.ts -w",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "",
   "license": "ISC"
